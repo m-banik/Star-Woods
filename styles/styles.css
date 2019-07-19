@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x:hidden;
+}
+
+.navbar .navbar-brand{
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  font-family:'Dancing Script', cursive;
+  border: 3px solid #000;
+}
+
+.navbar-collapse, .navbar-nav{
+  width: 100%;
+}
+
+.navbar li{
+  border: 2px solid transparent;
+  transition: .2s;
+}
+
+.navbar li:hover{
+  color: #fff;
+  border-right-color: #4A4A4B;
+}
+
+#socMed{
+  font-size: 1.2rem;
+}
+
+#socMed a:hover i{
+  color: #444;
+}
+
+a.text-info{
+  text-decoration: none;
+}
+
+#identity span{
+  display:block;
+}
+
+.agreementsLabels, .italics{
+  font-style: italic;
+}
+
+footer{
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+}
+
+#modalTitle{
+  text-transform: capitalize;
+}
+
+#modalHeader,.cursive{
+  font-family:'Dancing Script', cursive;
+}
+
+@media (max-width: 992px) {
+ .navbar .navbar-nav{
+    background-color: #000;
+  }
+  
+  .navbar-light .navbar-nav .nav-link{
+    color: rgba(255,255,255,.5);
+    transition: .2s;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-item.active .nav-link{
+    color: #fff;
+  }
+
+ .navbar li:hover{
+   border-right-color: transparent;
+   border-left-color: #fff;
+   transition: border-right-color 0;
+ }
+}
+
+@media(min-width: 993px){
+  p.pWithBorder{
+  border-left: 4px solid #000;
+  }
+
+  .navbar-light .navbar-nav .nav-link{
+    text-align: right;
+  }
+}

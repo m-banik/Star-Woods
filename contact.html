@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <title>Star Woods</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-lg-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white flex-lg-column align-items-start">
+          <a class="navbar-brand" href="./index.html">Star Woods</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget"
+            aria-controls="navbarTarget" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarTarget">
+            <ul class="navbar-nav flex-column my-1">
+              <li class="nav-item px-1 my-1 mx-2">
+                <a class="nav-link" href="./gallery.html">Galeria</a>
+              </li>
+              <li class="nav-item px-1 my-1 mx-2">
+                <a class="nav-link" href="./index.html">O nas</a>
+              </li>
+              <li class="nav-item px-1 my-1 mx-2">
+                <a class="nav-link" href="./offer.html">Oferta</a>
+              </li>
+              <li class="nav-item px-1 my-1 mx-2">
+                <a class="nav-link" href="./order.html">Zamówienie</a>
+              </li>
+              <li class="nav-item px-1 my-1 mx-2">
+                <a class="nav-link" href="./portfolio.html">Portfolio - Dostępne od ręki</a>
+              </li>
+              <li class="nav-item active px-1 my-1 mx-2">
+                <a class="nav-link" href="./contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col m-3">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p class="text-muted">Obrazy i zdjęcia na desce</p>
+          </div>
+          <div class="col">
+            <span id="socMed" class="row justify-content-end mr-2">
+              <a href="#" class="text-muted mr-2">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-muted mr-2">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-muted mr-2">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-muted mr-2">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+        <hr>
+        <section class="m-2 mr-3">
+          <h2 class="text-uppercase cursive">kontakt</h2>
+          <p id="identity" class="text-muted">
+            <span>Luke Skywalker</span>
+            <span>tel: 123 654 789</span>
+            <span>Szczawno-Zdrój</span>
+          </p>
+          <form>
+            <div class="form-group">
+              <label for="fullName">Imię i nazwisko:</label>
+              <input class="form-control" type="text" name="name" id="fullName" placeholder="np. Jan Kowalski" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Adres e-mail:</label>
+              <input class="form-control" type="email" name="email" id="email" placeholder="np. j.kowalski@gmail.com"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Temat wiadomości:</label>
+              <input class="form-control" type="text" name="subject" id="subject"
+                placeholder="np. Portret ślubny na desce bielonej" required>
+            </div>
+            <div class="form-group">
+              <label for="content">Treść wiadomości:</label>
+              <textarea class="form-control" name="content" id="content" rows="4" placeholder="Piszę w związku z..."
+                required></textarea>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" name="agreement" id="agreement" required>
+              <label for="agreement" id="agreementLabel"
+                class="custom-control-label text-justify agreementsLabels"><small>Wyrażam zgodę
+                  na przetwarzanie
+                  moich
+                  danych
+                  osobowych zgodnie z ustawą o
+                  ochronie danych osobowych w związku z realizacją zamówienia. Podanie danych jest dobrowolne, ale
+                  niezbędne
+                  do przetworzenia zapytania. Zostałem /am poinformowany /a, że przysługuje mi prawo dostępu do swoich
+                  danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych
+                  osobowych jest firma Star Woods.</small></label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" name="termsRead" id="termsRead" required>
+              <label for="termsRead" id="termsReadLabel"
+                class="custom-control-label text-justify agreementsLabels"><small>Oświadczam, że zapoznałem/zapoznałam
+                  się z warunkami świadczenia usług przez firmę Star Woods i je akceptuję. <strong>Tekst regulaminu do
+                    przeczytania za kliknięciem przycisku poniżej.</strong></small></label>
+            </div>
+            <div class="row justify-content-center justify-content-md-start mt-3 ml-md-3">
+              <input type="submit" value="Wyślij" class="btn btn-primary btn-lg mr-2">
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#termsOfService">
+                Regulamin
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+      <hr>
+      <footer class="text-center">
+        <p>Copyright &copy; 2019 &bull; All Rights Reserved &bull; Star Woods</p>
+      </footer>
+    </div>
+  </div>
+  <div class="modal fade" id="termsOfService" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">warunki świadczenia usług</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h1 id="modalHeader" class="text-center">Regulamin</h1>
+            <article class="text-justify">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam distinctio corporis similique
+                architecto dolorem! Facilis asperiores dolore illo aliquam beatae?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reprehenderit ipsa animi quisquam
+                commodi
+                ex modi labore dolore nulla nobis distinctio magni, ullam natus ad provident molestias vel nihil hic
+                perferendis consectetur soluta. Sunt optio culpa excepturi pariatur, voluptatum, labore illo magni
+                commodi
+                vero saepe nisi amet laudantium consectetur nulla?</p>
+              <p class="mb-0">Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Mollitia,
+                sunt:
+              </p>
+              <div class="mx-2">
+                <ol class="d-block ml-2 mt-0">
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                </ol>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magnam commodi eum rem nemo
+                assumenda!</p>
+            </article>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
