@@ -83,6 +83,10 @@ footer{
  }
 }
 
+.icon{
+  cursor: pointer;
+}
+
 @media(min-width: 993px){
   p.pWithBorder{
   border-left: 4px solid #000;
