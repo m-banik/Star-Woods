@@ -1,4 +1,4 @@
-# Star Woods - Artist's/Craftsman's portfolio page made with Bootstrap
+# Star Woods - Artist's/Craftsman's portfolio page made with Bootstrap - RWD
 
 ## About
 The project is sample web page for a company usage. It could be provided by a craftsman or some kind of an artist who would have wanted to show his or hers works to the world and to sell them. Note that it is just a template - pure frontend without functional features.
